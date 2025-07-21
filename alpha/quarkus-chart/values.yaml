@@ -1,4 +1,4 @@
-darkMode: "false"
+darkMode: "true"
 
 image:
   ## Name of the image you want to build/deploy
