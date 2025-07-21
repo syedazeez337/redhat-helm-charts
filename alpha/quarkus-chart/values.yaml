@@ -1,3 +1,5 @@
+darkMode: "false"
+
 image:
   ## Name of the image you want to build/deploy
   ## Defaults to the release name
@@ -125,6 +127,8 @@ deploy:
   env:
   #  - name: VAR_NAME
   #    value: var-value
+    - name: DARK_MODE
+      value: "{{ .Values.darkMode | quote }}"
 
   ## Freeform envFrom for the Quarkus app. More information: https://kubernetes.io/docs/tasks/configure-pod-container/configure-pod-configmap/#configure-all-key-value-pairs-in-a-configmap-as-container-environment-variables
   envFrom:
